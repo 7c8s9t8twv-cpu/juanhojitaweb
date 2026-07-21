@@ -76,7 +76,7 @@ a{color:inherit;}
   display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .footer-social{display:flex;gap:22px;align-items:center;}
-.footer-social a{color:#FFFFFF;transition:color .12s ease;display:flex;}
+.footer-social a{color:var(--paper);transition:color .12s ease;display:flex;}
 .footer-social a:hover{color:var(--green);}
 .footer-brand{
   font-family:'Overpass',sans-serif;font-weight:700;font-size:14px;
