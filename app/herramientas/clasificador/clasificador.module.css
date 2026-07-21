@@ -1,0 +1,222 @@
+/* Página del clasificador — usa las variables de globals.css */
+
+.kicker{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--green);
+  border:1px solid var(--green);
+  border-radius:3px;
+  padding:.28rem .7rem;
+  margin-bottom:1.1rem;
+}
+
+.acciones{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  margin-top:1.8rem;
+}
+
+.cta{
+  display:inline-block;
+  background:var(--green);
+  color:var(--white);
+  font-weight:900;
+  font-size:.95rem;
+  letter-spacing:.02em;
+  padding:.85rem 1.7rem;
+  border-radius:4px;
+  text-decoration:none;
+  transition:background .16s ease;
+}
+.cta:hover{background:var(--green-dark);}
+
+.ctaAlt{
+  display:inline-block;
+  background:transparent;
+  color:var(--ink);
+  font-weight:700;
+  font-size:.95rem;
+  padding:.85rem 1.7rem;
+  border:1px solid var(--line);
+  border-radius:4px;
+  text-decoration:none;
+  transition:border-color .16s ease;
+}
+.ctaAlt:hover{border-color:var(--ink);}
+
+.notaCta{
+  font-size:.82rem;
+  color:var(--carbon-soft);
+}
+
+/* --- privacidad: el argumento central, va destacado --- */
+.privacidad{
+  background:var(--green-bg);
+  border-left:4px solid var(--green);
+  border-radius:0 6px 6px 0;
+  padding:1.9rem 2rem;
+  margin:3.5rem 0 1rem;
+}
+.privacidad h2{
+  font-size:1.35rem;
+  color:var(--ink);
+  margin-bottom:.9rem;
+}
+.privacidad p{
+  font-size:.98rem;
+  line-height:1.72;
+  color:var(--ink-soft);
+  margin-bottom:.85rem;
+}
+.privacidad p:last-child{margin-bottom:0;}
+.privacidad a{color:var(--green-dark);font-weight:700;}
+
+.contrapunto{
+  font-size:.88rem !important;
+  color:var(--carbon-soft) !important;
+  border-top:1px solid rgba(110,133,38,.28);
+  padding-top:.85rem;
+  margin-top:1.1rem !important;
+}
+
+.titulo{
+  font-size:1.5rem;
+  color:var(--ink);
+  margin:3.5rem 0 1.6rem;
+}
+
+/* --- pasos --- */
+.pasos{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.6rem;
+  padding:0;
+}
+.pasos li{
+  display:flex;
+  gap:.95rem;
+  align-items:flex-start;
+}
+.num{
+  flex:none;
+  width:2rem;
+  height:2rem;
+  display:grid;
+  place-items:center;
+  background:var(--ink);
+  color:var(--white);
+  font-weight:900;
+  font-size:.9rem;
+  border-radius:50%;
+}
+.pasos h3{
+  font-size:1rem;
+  color:var(--ink);
+  margin-bottom:.35rem;
+}
+.pasos p{
+  font-size:.9rem;
+  line-height:1.6;
+  color:var(--carbon-soft);
+}
+
+/* --- tarjetas de funciones --- */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:1.2rem;
+}
+.tarjeta{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:1.4rem 1.5rem;
+}
+.tarjeta h3{
+  font-size:1rem;
+  color:var(--ink);
+  margin-bottom:.5rem;
+}
+.tarjeta p{
+  font-size:.9rem;
+  line-height:1.65;
+  color:var(--carbon-soft);
+}
+
+/* --- formatos --- */
+.formatos{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:1.9rem 2rem;
+  margin-top:3.5rem;
+}
+.formatos h2{
+  font-size:1.35rem;
+  color:var(--ink);
+  margin-bottom:1.1rem;
+}
+.formatos ul{
+  list-style:none;
+  padding:0;
+  display:grid;
+  gap:.85rem;
+}
+.formatos li{
+  font-size:.94rem;
+  line-height:1.65;
+  color:var(--carbon-soft);
+  padding-left:1.1rem;
+  position:relative;
+}
+.formatos li::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:.62em;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--green);
+}
+.formatos b{color:var(--ink);}
+
+.nota{
+  font-size:.86rem;
+  line-height:1.6;
+  color:var(--carbon-soft);
+  background:var(--paper-2);
+  border-radius:4px;
+  padding:.9rem 1.1rem;
+  margin-top:1.3rem;
+}
+
+/* --- cierre --- */
+.cierre{
+  border-top:1px solid var(--line);
+  margin:4rem 0 1rem;
+  padding-top:2.5rem;
+}
+.cierre h2{
+  font-size:1.35rem;
+  color:var(--ink);
+  margin-bottom:.8rem;
+}
+.cierre p{
+  font-size:.98rem;
+  line-height:1.72;
+  color:var(--carbon-soft);
+  max-width:62ch;
+}
+
+@media (max-width:640px){
+  .privacidad,.formatos{padding:1.4rem 1.3rem;}
+  .acciones{flex-direction:column;align-items:stretch;}
+  .cta,.ctaAlt{text-align:center;}
+}

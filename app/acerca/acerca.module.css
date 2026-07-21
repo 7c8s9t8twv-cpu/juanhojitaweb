@@ -1,0 +1,42 @@
+.title{
+  font-size:clamp(40px,7vw,64px);color:var(--ink);margin-bottom:40px;
+}
+.grid{
+  display:grid;grid-template-columns:380px 1fr;gap:48px;align-items:start;
+}
+.photoWrap{position:sticky;top:100px;}
+.photo{
+  width:100%;height:auto;object-fit:cover;background:var(--paper-2);
+}
+.bio{display:flex;flex-direction:column;gap:18px;}
+.bio p{font-size:17px;color:var(--carbon);line-height:1.6;}
+.bio b{color:var(--ink);font-weight:700;}
+.quote{
+  font-weight:700;color:var(--ink) !important;
+  font-size:18px !important;
+}
+
+/* misión / visión */
+.mvGrid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:40px;}
+.mvDark{background:var(--ink);color:var(--paper);padding:44px 40px;}
+.mvGreen{background:var(--green);color:var(--ink);padding:44px 40px;}
+.mvLabel{
+  display:block;font-size:13px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:16px;opacity:0.85;
+}
+.mvText{font-size:18px;line-height:1.5;font-weight:700;}
+
+.mvFooter{
+  display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;
+  border-top:1.5px solid var(--green);padding-top:32px;
+}
+.mvFootText{font-size:18px;color:var(--ink);}
+.mvFootText b{font-weight:700;}
+.mvFooter .btn{justify-self:start;}
+
+@media(max-width:860px){
+  .grid{grid-template-columns:1fr;gap:28px;}
+  .photoWrap{position:static;max-width:340px;}
+  .mvGrid{grid-template-columns:1fr;}
+  .mvFooter{grid-template-columns:1fr;gap:20px;}
+}

@@ -1,0 +1,53 @@
+.heroGrid{display:block;}
+.linkedin{
+  display:inline-block;margin-top:18px;font-size:15px;
+  color:var(--green);text-decoration:none;font-weight:700;
+}
+.linkedin:hover{text-decoration:underline;}
+
+.blockTitle{font-size:clamp(32px,5vw,46px);color:var(--ink);margin-bottom:14px;}
+.blockTitleLight{font-size:clamp(32px,5vw,46px);color:var(--paper);margin-bottom:14px;}
+.blockLead{font-size:17px;color:var(--carbon-soft);max-width:620px;margin-bottom:40px;}
+.blockLeadLight{font-size:17px;color:var(--paper-2);max-width:620px;margin-bottom:40px;}
+
+/* tarjetas trabajos */
+.cards{display:flex;flex-direction:column;gap:24px;}
+.card{
+  background:var(--white);border:1px solid var(--line);
+  padding:32px;
+}
+.cardTitle{font-size:clamp(20px,2.6vw,25px);color:var(--ink);font-weight:700;margin-bottom:8px;}
+.cardFecha{font-size:14px;font-weight:700;color:var(--green-dark);margin-bottom:2px;}
+.cardOrg{font-size:13px;font-weight:700;letter-spacing:0.5px;color:var(--carbon-soft);margin-bottom:14px;}
+.cardDesc{font-size:16px;color:var(--carbon);line-height:1.6;margin-bottom:18px;}
+
+/* tarjetas proyectos */
+.projBig{display:flex;flex-direction:column;gap:22px;margin-bottom:22px;}
+.projSmall{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.projCard{
+  background:rgba(140,167,48,0.10);
+  border:1px solid rgba(140,167,48,0.30);
+  padding:30px;
+}
+.projHead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:12px;}
+.projTitle{font-size:clamp(20px,2.6vw,25px);color:var(--green);font-weight:700;}
+.projKind{font-size:12px;font-weight:700;letter-spacing:1px;color:var(--green);white-space:nowrap;}
+.projDesc{font-size:16px;color:var(--paper-2);line-height:1.6;margin-bottom:16px;}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:8px;}
+.tag{
+  font-size:13px;font-weight:700;color:var(--ink);
+  background:var(--green);border-radius:999px;padding:5px 14px;
+}
+.tagLight{
+  font-size:13px;font-weight:700;color:var(--ink);
+  background:var(--green);border-radius:999px;padding:5px 14px;
+}
+
+.closing{font-size:clamp(18px,2.4vw,22px);font-weight:700;color:var(--ink);line-height:1.4;}
+
+@media(max-width:760px){
+  .projSmall{grid-template-columns:1fr;}
+  .projHead{flex-direction:column;gap:4px;}
+}

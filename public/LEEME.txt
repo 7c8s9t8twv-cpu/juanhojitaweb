@@ -1,0 +1,8 @@
+Coloca aquí tus archivos públicos:
+
+- juan.jpg                    → tu foto para la página "Acerca de"
+- diagnostico-operativo.pdf   → el PDF que se envía a quien deja su correo
+
+Si no pones el PDF, el correo igual se envía (sin adjunto) y la app no falla.
+Si no pones la foto, la página "Acerca de" mostrará un espacio vacío hasta que
+agregues juan.jpg.
