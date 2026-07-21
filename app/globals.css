@@ -1,6 +1,6 @@
 /* ════════════════════════════════════════════════════════════
    JUAN HOJITA — estilos globales
-   Paleta verde oliva + Lato (todo el sitio)
+   Paleta verde oliva + Overpass (todo el sitio)
    ════════════════════════════════════════════════════════════ */
 
 :root{
@@ -25,7 +25,7 @@ html{scroll-behavior:smooth;}
 body{
   background:var(--paper);
   color:var(--carbon);
-  font-family:'Lato',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-family:'Overpass',-apple-system,BlinkMacSystemFont,sans-serif;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
@@ -45,7 +45,7 @@ a{color:inherit;}
   display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .nav-brand{
-  font-family:'Lato',sans-serif;font-weight:900;font-size:19px;
+  font-family:'Overpass',sans-serif;font-weight:900;font-size:19px;
   letter-spacing:1px;color:var(--ink);text-decoration:none;
 }
 .nav-links{
@@ -53,7 +53,7 @@ a{color:inherit;}
   list-style:none;
 }
 .nav-links a{
-  font-family:'Lato',sans-serif;font-size:16px;font-weight:400;
+  font-family:'Overpass',sans-serif;font-size:16px;font-weight:400;
   color:var(--ink-soft);text-decoration:none;
   transition:color .12s ease;
 }
@@ -76,16 +76,16 @@ a{color:inherit;}
   display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .footer-social{display:flex;gap:22px;align-items:center;}
-.footer-social a{color:var(--green);transition:color .12s ease;display:flex;}
-.footer-social a:hover{color:var(--paper);}
+.footer-social a{color:#FFFFFF;transition:color .12s ease;display:flex;}
+.footer-social a:hover{color:var(--green);}
 .footer-brand{
-  font-family:'Lato',sans-serif;font-weight:700;font-size:14px;
+  font-family:'Overpass',sans-serif;font-weight:700;font-size:14px;
   letter-spacing:1px;color:var(--paper-2);
 }
 
 /* ── BOTONES ── */
 .btn{
-  display:inline-block;font-family:'Lato',sans-serif;
+  display:inline-block;font-family:'Overpass',sans-serif;
   font-size:16px;font-weight:700;text-decoration:none;cursor:pointer;
   padding:15px 32px;border:none;letter-spacing:0.2px;
   transition:background .14s ease, color .14s ease, transform .12s ease;
@@ -102,15 +102,15 @@ a{color:inherit;}
 .section-green{background:var(--green);color:var(--ink);}
 
 .eyebrow{
-  display:inline-block;font-family:'Lato',sans-serif;
+  display:inline-block;font-family:'Overpass',sans-serif;
   font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
   color:var(--green-ok);
 }
 .eyebrow-light{color:var(--green);}
 
-h1{font-family:'Lato',sans-serif;font-weight:900;line-height:1.1;letter-spacing:-0.5px;}
-h2{font-family:'Lato',sans-serif;font-weight:900;line-height:1.15;letter-spacing:-0.3px;}
-h3{font-family:'Lato',sans-serif;font-weight:700;line-height:1.25;}
+h1{font-family:'Overpass',sans-serif;font-weight:900;line-height:1.1;letter-spacing:-0.5px;}
+h2{font-family:'Overpass',sans-serif;font-weight:900;line-height:1.15;letter-spacing:-0.3px;}
+h3{font-family:'Overpass',sans-serif;font-weight:700;line-height:1.25;}
 
 /* ── HERO ── */
 .hero-dark{

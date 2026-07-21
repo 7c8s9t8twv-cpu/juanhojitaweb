@@ -38,7 +38,6 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-cart">
-          <span className="lang">ES</span>
           <button
             className="nav-toggle"
             aria-label="Menú"
